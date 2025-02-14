@@ -24,11 +24,14 @@ This guide introduces open-source tools for transcription and sentiment analysis
 ### 1. Limited Resources
    - **GPU and Hardware Constraints**: Free resources like Google Colab’s GPU access are limited, and personal hardware may not be powerful enough to handle large datasets or long-running tasks efficiently. This can slow down processing, especially for complex models or large audio files.
    - **Scaling Challenges**: While open-source tools work well for small tasks, scaling up to large projects may require more powerful resources, which may not always be accessible.
+   - **Limited Parallel Processings**: When you leverage cloud based APIs, 10,000 hours of video footage can be processed in 1 hour on 10,000 servers with 10,000 separate API calls. Locally, you may have to process these in series. So even if total compute time is the same, parallel processing can get your data processing done far more quickly.
+   - **This might not matter so much....**: If you're a researcher and you just want to experiment and learn, this won't be an issue. Also, keep in mind that "scaling challenges" might not apply to a real world research data set. A few thousand hours of video footage might not be too big if you are using GPUs in Colab or a local environment, and you're willing to wait a day or two for your results. 
 
 ### 2. No 24/7 Support
    - **Community Support**: Open-source tools often come with community-driven support rather than official customer service. While active communities exist, issues may take longer to resolve without direct technical support, unlike cloud services such as AWS or Google Cloud that offer around-the-clock assistance.
+   - **This might not matter so much...**: IT often talks about support levels (I remember Gold, Silver, Bronze at Berkeley), indicating committments to uptime and availability, speed and timing of response from an IT team, and production support. If your goal is to process data one time for a research project, this may not have any real impact on your project. 
 
-## Technologies Used
+## Technologies Used in this Workshop
 
 ### 1. Whisper: Transcription Model
    - **Overview**: Whisper is an open-source automatic speech recognition (ASR) system developed by OpenAI. It supports a range of languages and can transcribe audio or video files into text. Available in multiple model sizes, Whisper balances between speed and accuracy.
