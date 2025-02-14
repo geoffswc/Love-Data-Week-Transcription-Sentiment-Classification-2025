@@ -43,14 +43,15 @@ This guide introduces open-source tools for transcription and sentiment analysis
    - **Overview**: Hugging Face’s Transformers library includes pre-trained models for sentiment analysis and text classification. Notable models include:
      - **DistilBERT** for sentiment analysis.
      - **BART** for zero-shot classification.
-   - **Training Data**: 
-     - **DistilBERT** was trained on the English Wikipedia and the BookCorpus dataset, a diverse set of general text sources.
-     - **BART** was trained on the MultiNLI dataset, designed for text classification tasks.
+   - **Training Data**:
+     - **DistilBERT** was pre-trained on the **BooksCorpus** and **English Wikipedia**. It was then fine-tuned on the **SST-2** dataset (Stanford Sentiment Treebank), which contains movie reviews labeled as positive or negative. This fine-tuning allows it to perform sentiment classification tasks.
+     - **BART** was trained on the **MultiNLI** dataset, which is designed for text classification tasks.
    - **Sources**:
      - [DistilBERT: A distilled version of BERT (Hugging Face)](https://huggingface.co/distilbert-base-uncased)
      - [BookCorpus Dataset](https://huggingface.co/datasets/bookcorpus)
      - [BART: Denoising Sequence-to-Sequence Pre-training for Natural Language Generation, Translation, and Comprehension (Hugging Face)](https://huggingface.co/facebook/bart-large)
-   - **How It Works**: These models process text input and classify it based on their training data. For example, DistilBERT categorizes sentiment as positive, neutral, or negative, while BART can classify text into categories without needing prior training on specific labels.
+   - **How It Works**: These models process text input and classify it based on their training data. For example, **DistilBERT** categorizes sentiment as positive, neutral, or negative, while **BART** can classify text into categories without needing prior training on specific labels.
+
 
 ## Practical Considerations for Using General Models on Specialized Data
 
@@ -70,11 +71,11 @@ This guide introduces open-source tools for transcription and sentiment analysis
 
 Using open-source technologies like Whisper and Hugging Face Transformers offers a flexible, low-cost approach for transcription and sentiment analysis, particularly for researchers working on small-scale projects. While there are some limitations, especially with specialized data, these tools provide significant advantages, including cost control, flexibility, and ease of use. Fine-tuning general models for specific tasks can be an efficient way to handle specialized data, especially when resources for training new models are unavailable.
 
-## Next Steps
+## Coding Workshop
 
-Before starting with the code, we will cover:
-1. How to use Whisper for transcription in Python.
-2. How to implement sentiment analysis and classification using Hugging Face Transformers.
-3. Considerations for fine-tuning models for specialized tasks.
+For the hands-on section of this workshop:
+1. Use Python to download video files from the Industry Archives (or any public mp4 link)
+2. Use Whisper for transcription in Python.
+3. Classify documents and assess sentiment analysis using Hugging Face Transformers.
 
 
