@@ -29,7 +29,7 @@ This guide introduces open-source tools for transcription and sentiment analysis
 
 ### 2. No 24/7 Support
    - **Community Support**: Open-source tools often come with community-driven support rather than official customer service. While active communities exist, issues may take longer to resolve without direct technical support, unlike cloud services such as AWS or Google Cloud that offer around-the-clock assistance.
-   - **This might not matter so much...**: IT often talks about support levels (I remember Gold, Silver, Bronze at Berkeley), indicating committments to uptime and availability, speed and timing of response from an IT team, and production support. If your goal is to process data one time for a research project, this may not have any real impact on your project. 
+   - **This might not matter so much...**: IT often talks about support levels (I remember Gold, Silver, Bronze at Berkeley), indicating committments to uptime and availability, speed and timing of response from an IT team, and production support. If your goal is a one-time data processing task for a research project, this may not have any real impact on your project. 
 
 ## Technologies Used in this Workshop
 
